@@ -39,7 +39,7 @@ function App() {
       <main className='main'>
         <section>
           <AccoutingCreateForm addAccoutingToAccoutingList={addAccoutingToAccoutingList}  />
-          <AccoutingNumbers accoutingValor={accoutingValor}/>
+         {accoutingList.length > 0 ? <AccoutingNumbers accoutingValor={accoutingValor}/> : null}
         </section>
         <section>
           <h2 className='titleResume'>Resumo financeiro</h2>

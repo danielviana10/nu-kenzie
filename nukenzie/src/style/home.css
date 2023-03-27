@@ -93,25 +93,64 @@ input::placeholder{
     gap: 10px;
     margin-top: 15px;
 }
+.divCardGrey{
+    padding: 10px;
+    border-left: 3px solid grey;
+    border-radius: 4px 0px 0px ;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+}
+
 .divCard li{
     display: flex;
     flex-direction: column;
     align-items: start;
     gap: 10px;
 }
+.divCardGrey li{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+}
+
 .divCard h3{
     font-weight: 700;
     font-size: 16px;
 }
+.divCardGrey h3{
+    font-weight: 700;
+    font-size: 16px;
+}
+
 .divCard p{
     font-weight: 400;
     font-size: 12px;
 }
+.divCardGrey p{
+    font-weight: 400;
+    font-size: 12px;
+}
+
 .divCard span{
     font-weight: 400;
     font-size: 12px;
 }
+.divCardGrey span{
+    font-weight: 400;
+    font-size: 12px;
+}
+
 .divCard button{
+    background: #E9ECEF;
+    border-radius: 2px;
+    border: none;
+    font-size: 10px;
+    cursor: pointer;
+}
+.divCardGrey button{
     background: #E9ECEF;
     border-radius: 2px;
     border: none;
@@ -127,6 +166,12 @@ input::placeholder{
         margin-top: 40px;
     }
     .divCard{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+    }
+    .divCardGrey{
         display: flex;
         justify-content: space-between;
         align-items: center;

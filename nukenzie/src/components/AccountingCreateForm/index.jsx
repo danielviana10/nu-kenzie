@@ -24,7 +24,9 @@ export const AccoutingCreateForm = ( { addAccoutingToAccoutingList } ) => {
                 <input required type="text" value={money} placeholder="1" onChange={(event) => setMoney(event.target.value)}/>
 
                 <label>Tipo de valor</label>
-                <select required value={type} onChange={(event) => setType(event.target.value)} >
+                <select required value={type} onChange={(event) => {
+                    setType(event.target.value)
+                    }} >
                     <option value="Entrada">Entrada</option>
                     <option value="Saída">Despesas</option>
                 </select>
