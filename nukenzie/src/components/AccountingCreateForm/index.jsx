@@ -10,13 +10,17 @@ export const AccoutingCreateForm = ( { addAccoutingToAccoutingList } ) => {
         event.preventDefault()
         const formData = {title, money, type}
         addAccoutingToAccoutingList(formData)
+
     }
 
     return(
         <div>
             <form onSubmit={submit} className="form">
                 <label>Descrição</label>
-                <input required type="text" value={title} placeholder="Digite aqui sua descrição" onChange={(event) => setTitle(event.target.value)}/>
+                <input required type="text" value={title} placeholder="Digite aqui sua descrição" onChange={(event) => {
+                    setTitle(event.target.value)
+                }
+                    }/>
                 <span>Ex: Compra de roupas</span>
 
         
