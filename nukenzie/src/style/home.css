@@ -21,7 +21,6 @@ body{
     border: 1px solid rgba(0, 0, 0, 0.2);
 }
 .form input{
-    width: 14em;
     padding: 8px 10px;
     margin-top: 14px;
     font-size: 16px;
@@ -40,7 +39,7 @@ input::placeholder{
     font-size: 12px;
 }
 .form button{
-    padding: 13px;
+    padding-block: 13px;
     margin-top: 26px;
     background-color: #FD377E;
     color: #F8F9FA;
