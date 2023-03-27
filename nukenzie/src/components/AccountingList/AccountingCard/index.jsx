@@ -1,12 +1,12 @@
 export const AccoutingCard = ({acc, removeAccoutingFromAccoutingList}) => {
     return(
-        <div>
+        <div className="divCard">
             <li>
                 <h3>{acc.title}</h3>
-                <p>{acc.money}</p>
+                <p>{acc.type}</p>
             </li>
             <li>
-                <span>{acc.type}</span>
+                <span>R$ {acc.money}</span>
                 <button onClick={() => removeAccoutingFromAccoutingList(acc.id)}>Excluir</button>
             </li>
         </div>

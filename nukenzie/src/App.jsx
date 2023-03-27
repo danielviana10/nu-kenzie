@@ -3,6 +3,7 @@ import { AccoutingCreateForm } from './components/AccountingCreateForm'
 import { AccoutingList } from './components/AccountingList'
 import { AccoutingNumbers } from './components/AccountingNumbers'
 import { Header } from './components/Header'
+
 import { v4 as uuidv4 } from 'uuid';
 
 
@@ -10,8 +11,16 @@ function App() {
   const [accoutingList, setAccoutingList] = useState([])
 
   const accoutingValor = accoutingList.reduce((previousValue, acc) => {
-    return previousValue + Number(acc.money)
+    if(acc.type == "Entrada"){
+      return previousValue + Number(acc.money)
+    }
+    else{
+      return previousValue - Number(acc.money)
+    }
   }, 0)
+
+
+  
 
   const addAccoutingToAccoutingList = (formData) => {
     const newAccouting = {...formData, id: uuidv4()}
@@ -25,15 +34,15 @@ function App() {
   }
 
   return (
-    <div>
+    <div className='home'>
       <Header />
-      <main>
+      <main className='main'>
         <section>
           <AccoutingCreateForm addAccoutingToAccoutingList={addAccoutingToAccoutingList}  />
           <AccoutingNumbers accoutingValor={accoutingValor}/>
         </section>
         <section>
-          <h2>Resumo financeiro</h2>
+          <h2 className='titleResume'>Resumo financeiro</h2>
           <AccoutingList accoutingList={accoutingList} removeAccoutingFromAccoutingList={removeAccoutingFromAccoutingList} />
         </section>
       </main>

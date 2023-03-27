@@ -14,7 +14,7 @@ export const AccoutingCreateForm = ( { addAccoutingToAccoutingList } ) => {
 
     return(
         <div>
-            <form onSubmit={submit}>
+            <form onSubmit={submit} className="form">
                 <label>Descrição</label>
                 <input required type="text" value={title} placeholder="Digite aqui sua descrição" onChange={(event) => setTitle(event.target.value)}/>
                 <span>Ex: Compra de roupas</span>
@@ -26,7 +26,7 @@ export const AccoutingCreateForm = ( { addAccoutingToAccoutingList } ) => {
                 <label>Tipo de valor</label>
                 <select required value={type} onChange={(event) => setType(event.target.value)} >
                     <option value="Entrada">Entrada</option>
-                    <option value="Saída">Saída</option>
+                    <option value="Saída">Despesas</option>
                 </select>
 
                 <button type="submit">Insira o valor</button>

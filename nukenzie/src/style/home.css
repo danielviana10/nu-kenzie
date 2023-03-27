@@ -1,0 +1,138 @@
+body{
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+}
+.home{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-inline: 1em;
+}
+.main{
+    padding-top: 20px;
+}
+.form{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.form input{
+    width: 14em;
+    padding: 8px 10px;
+    margin-top: 14px;
+    font-size: 16px;
+}
+input::placeholder{
+    font-size: 16px;
+    color: #868E96;
+}
+.form span{
+    font-size: 12px;
+    color: #868E96;
+}
+.form select{
+    padding: 8px 10px;
+    margin-top: 10px;
+    font-size: 12px;
+}
+.form button{
+    padding: 13px;
+    margin-top: 26px;
+    background-color: #FD377E;
+    color: #F8F9FA;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.form label{
+    margin-top: 10px;
+    font-size: 12px;
+    color: #212529;
+    font-weight: 600;
+}
+
+.divNumbers{
+    margin-top: 19px;
+    padding: 20px;
+    border: 1px solid #efe9e9;
+    border-radius: 4px;
+}
+.divNumbers li{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+.divNumbers li h2{
+    font-weight: 700;
+    font-size: 16px;
+}
+.divNumbers li span{
+    font-weight: 700;
+    font-size: 16px;
+    color: #FD377E;
+}
+.divNumbers span{
+    font-weight: 400;
+    font-size: 12px;
+}
+.titleResume{
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.divCard{
+    padding: 10px;
+    border-left: 3px solid #03B898;
+    border-radius: 4px 0px 0px ;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+}
+.divCard li{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+}
+.divCard h3{
+    font-weight: 700;
+    font-size: 16px;
+}
+.divCard p{
+    font-weight: 400;
+    font-size: 12px;
+}
+.divCard span{
+    font-weight: 400;
+    font-size: 12px;
+}
+.divCard button{
+    background: #E9ECEF;
+    border-radius: 2px;
+    border: none;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+@media(min-width: 1024px){
+    .main{
+        display: flex;
+        gap: 60px;
+        width: 100%;
+        margin-top: 40px;
+    }
+    .divCard{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+    }
+    .ulAcc{
+        width: 30em;
+    }
+}
