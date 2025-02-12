@@ -1,1 +1,3 @@
-# react-entrega-s1-template-nu-kenzie
+Carteira digital em REACT.
+
+Instale as dependências necessárias para rodar e NPM START.
