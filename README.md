@@ -1,3 +1,7 @@
 Carteira digital em REACT.
 
-Instale as dependências necessárias para rodar e NPM START.
+Acesse o projeto com cd .\nukenzie\
+Instale as dependências com o npm i
+Rode o projeto com npm run dev
+
+Tecnologias: react, react-dom e uuid.
